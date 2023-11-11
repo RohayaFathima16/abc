@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Nunito:wght@200&display=swap');
+
+:root{
+ --orange: #ffa500;
+}
+
+body
+{
+    background-image:url(bg2.jpg);
+    background-size:cover;
+}
+
+*
+{
+    font-family: 'Nunito',sans-serif;
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    outline : none ; 
+    border :none;
+    text-decoration : none;
+    transition: all .2s linear;
+}
+
+*::selection {
+ background: var(--orange);
+ color:white;
+}
+
+html{
+    font-size : 62.5%;
+    overflow-x:hidden ;
+    scroll-padding-top :6rem;
+    scroll-behavior : smooth;
+}
+header {
+    position: fixed;
+    top : 0;left:0;right:0;
+    background: #333;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color :aliceblue;
+    text-transform: uppercase;
+
+
+}
+header .logo span {
+    color : var(--orange);
+}
+
+header .navbar a{
+    color : #fff;
+    font-size:2rem;
+    margin : 0 .8rem;
+    word-spacing:7px;
+
+}
+
+header .navbar a:hover{
+    color:var(--orange);
+}
+
+
+.footer
+    {
+        margin-top:50%;
+        width: 100%;
+        padding: 5px 10px;
+        background: #333;
+        color:white;
+        display: flex;
+    }
+    .footer div{
+        text-align: center;
+    }
+    .col-2
+    {
+        flex-grow: 1;
+    }
+   .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .col-2 a{
+    display: block;
+    text-decoration: none;
+    color:burlywood;
+    margin-bottom: 10px;
+    font-size: small;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  
+  color: white;
+}
+.fa-whatsapp {
+  
+  color: white;
+}
+.fa-instagram {
+  
+  color: white;
+}
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+section{
+    padding:1.5rem;
+}
+form{
+    height: 400px;
+    width: 500px;
+    background-color:rgba(92, 87, 87, 0.07);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    border: 2px solid orange;
+    box-shadow: 0 0 40px orangered;
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color:black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lab1
+{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-color:skyblue;
+}
+
+input:hover{
+    background-color:#ffa500;
+}
+input{
+    display: block;
+    height: 50px;
+    color:orangered;
+    border-style:outset;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 15px 15px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: lightslategray;
+}
+
+::-webkit-scrollbar
+     {
+      width: 20px;
+     }
+     ::-webkit-scrollbar-track
+     {
+      box-shadow: inset 0 0 5px grey;
+     }
+     ::-webkit-scrollbar-thumb
+     {
+      background:#333;
+     }
+     ::-webkit-scrollbar-thumb:hover
+     {
+ background:orange;
+     }
+     
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color:transparent;
+    color:black;
+    padding: 15px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 30px;
+}
+    p
+    {
+        text-align: center;
+    }
+
+    </style>
+</head>
+
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <header>
+
+
+        <a href ="#" class="logo"><span>T</span>ravelia</a>
+        <nav class ="navbar">
+            <a href ="main.html">Home</a>
+
+            <a href ="#" >Packages</a>
+            <a href ="#" >Services</a>
+            <a href ="#">Gallery</a>
+            <a href ="about.html">About</a>
+            <a href="contact.html">Contact</a>
+                <a href="user_log.html">Login</a>
+                
+        </nav>
+     
+    </header>
+     <section>
+    <form action="user_log.html">
+        <table>
+            
+            
+           
+                <tr><td><label for="username" class="lab1">Name</label>
+                <input type="text"  placeholder="Name" id="username" size="50" pattern="[A-Z,a-z]{50}*" required=""></td>
+                 
+                <td><label for="email" class="lab1">Email Id</label>
+                <input type="email" name="email" placeholder="email" id="email" size ="50" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required="" ></td></tr>
+                
+                <tr><td>
+                <label for="num" class="lab1">Phone number</label>
+                <input id="num"  name="number" placeholder="Phone" pattern="[0-9]{10}" required="">
+
+        
+                </td>
+                <td><label for="pass" class="lab1">Create Password</label>
+                <input  id="pass" name="pass"  placeholder="password" pattern="(?=.*\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8or more characters." required="">
+                
+            </td>
+                </tr>
+                
+        </table>
+        <button onclick="return(validateForm(username,email,num,pass))">Register</button>
+        <p> Already have an account? <a href="user_log.html"> click to login here</a> </p>
+    </form>
+     </section>
+     <script> 
+       function validateForm(username,email,num,pass)
+      {
+        
+                if (!username.checkValidity()){
+                     alert("Invalid Name");
+                     return false;
+                }
+                else if(!email.checkValidity())
+                {
+                    alert("Invalid Email");
+                    return false;
+                }
+                else if(!num.checkValidity())
+                {
+                    alert("Enter valid phone number");
+                    return false;
+                }
+                else if(!pass.checkValidity())
+                {
+                    alert("Create password correctly");
+                    return false;
+                }
+                else{
+                    alert(" registered successfully");
+
+                    return true;
+        
+                }
+                
+      }
+    </script>
+</body>
+
+    
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class ="container">
+        <div class ="left">
+            <p>Payment Methods</p>
+            <hr style ="border:1px solid #ccc; margin : 0 15px;">
+            <div class ="methods">
+                <div onclick ="doFun()" id ="tColorA" style ="color : orange;"><i class ="fa-solid fa-credit-card" style ="color:orange;"></i>Payment by card</div>
+                <div onclick="doFunA()" id ="tColorB" ><i class ="fa-solid fa-building-columns"></i>Internet Banking</div>
+                <div onclick="doFunB()" id ="tColorC"><i class="fa-solid fa-wallet"></i>UPI</div>
+                <hr style ="border:1px solid #ccc; margin: 0 15px;">
+            </div>
+        </div>
+        <div class ="center">
+            <a href ="https://www.shift4shop.com/credit-card-logos.html"><img alt ="Credit Card Logos" title  ="Credit Card Logos" src ="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width ="250"  height ="auto"/></a>
+            <hr style="border:1px solid #ccc;margin: 0 15px;">
+
+            <div class ="card-details">
+                <form>
+                    <p>Card Number</p>
+                    <div class ="c-number" id ="c-number">
+                        <input id ="number" class="cc-number" placeholder ="Card Number" maxlength ="19" required>
+                        <i class ="fa-solid fa-credit-card" style ="margin: 0;"></i>
+                    </div>
+
+                    <div class ="c-details">
+                        <div>
+                            <p>Expiry Date</p>
+                            <input id ="e-date" class ="cc-exp" placeholder ="MM/YY" pattern="\d{2}\/\d{2}"  required maxlength ="5" required>
+                        </div>
+                       
+                        <div>
+                            <p>CVV</p>
+                        <div class="cvv-box" id ="cvv-box">
+                            <input id="cvv" class ="cc-cvv" placeholder="CVV" required maxlength="3" required>
+                            <i class ="fa-solid fa-circle-question" title ="3 digits on the back of the card" style ="cursor: pointer;"></i>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class ="email">
+                        <p>Email</p>
+                        <input type ="email" placeholder="example@email.com" id  ="email" required>
+                    </div>
+                    <button id="paymentButton" >Pay Now</button>
+
+                        <script>
+                            // Function to display the alert when the button is clicked
+                            function displayPaymentAlert() {
+                            alert("Payment Successful!");
+                            }
+
+                            // Attach a click event listener to the button
+                            document.getElementById("paymentButton").addEventListener("click", displayPaymentAlert);
+                        </script>
+                </form>
+                <button id ="submit">HOME</button>
+                <script>
+                    document.getElementById('submit').addEventListener('click', function() {
+                      window.location.href = 'main.html'; // Replace 'target-page.html' with the URL of the page you want to navigate to
+                    });
+                    </script>
+            </div>
+        </div>
+
+        <div class ="right">
+            <p>Order Information</p>
+            <hr style="border:1px solid #ccc; margin: 0 15px;">
+            <div class ="details">
+                <div style ="font-weight: bold; padding : 3px 0;">Order Description</div>
+                <div style ="padding: 3px 0;" >Test Payment</div>
+            </div>
+            <a href ="https://www.shift4shop.com/credit-card-logos.html"><img alt ="Credit Card Logos" title="Credit Card Logos" src ="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width ="100%" height ="auto" /></a>
+        </div>
+    </div>
+<script src ="payment.js"></script>
+
+
+</body>
+  
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!--FOOTER-->
+</html>

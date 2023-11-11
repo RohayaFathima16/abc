@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Travelia Home Page</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+
+<body>
+    <header>
+	<a href ="#" class="logo"><span>T</span>ravelia</a>
+        <div class="wrapper">
+        <nav class="nav">
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href ="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href ="packages.html" >Packages</a></li>
+                <li><a href ="services.html" >Services</a></li>
+				<li><a href ="gallary.html">Gallary</a></li>
+			    <li><a href ="book.html">Book</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+	</nav>	
+  </div>
+          <div> 
+           <a href ="user_log.html"  ><button id = "login-btn" >Login<i class ="fa fa-user" ></i></button></a>
+           </div>
+    </header>
+    <div class="login-form-container" id ="login-form">
+
+        <i class="fas fa-times" id ="form-close"></i>
+    </div>
+   
+    <section class ="home" id ="home">
+
+        <div class ="content">
+            <h3>adventure is worthwhile</h3>
+            <p>discover new places with us, adventure awaits</p>
+            <a href ="#" class ="btn" >discover more</a>
+        </div>
+        
+         <div class ="video-container">
+         <video src ="main1.mp4" id ="video-slider"  loop autoplay muted></video>
+        <!-- <img class ="bgimg" src="b" width="1500px" height="1050" >--> 
+
+         </div >
+        
+    </section>
+</body>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>plan your trip</h4>
+                <ul>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">transport</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+   
+    function myMenuFunction() {
+     var i = document.getElementById("navMenu");
+ 
+     if(i.className === "nav-menu") {
+         i.className += " responsive";
+     } else {
+         i.className = "nav-menu";
+     }
+    }
+ </script>
+<!--FOOTER--> 
+</html>

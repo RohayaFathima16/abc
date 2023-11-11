@@ -1,0 +1,724 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Nunito:wght@200&display=swap');
+
+
+:root{
+ --orange: #ffa500;
+}
+
+body
+{
+    background-image:url(bg2.jpg);
+    background-size:cover;
+}
+
+*
+{
+    font-family: 'Nunito',sans-serif;
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    outline : none ; 
+    border :none;
+    text-decoration : none;
+    transition: all .2s linear;
+}
+
+*::selection {
+ background: var(--orange);
+ color:white;
+}
+
+html{
+    font-size : 62.5%;
+    overflow-x:hidden ;
+    scroll-padding-top :6rem;
+    scroll-behavior : smooth;
+}
+
+header {
+    position: fixed;
+    top : 0;left:0;right:0;
+    background: #333;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color :aliceblue;
+    text-transform: uppercase;
+
+
+}
+header .logo span {
+    color : var(--orange);
+}
+
+header .navbar a{
+    color : #fff;
+    font-size:2rem;
+    margin : 0 .8rem;
+    word-spacing:7px;
+
+}
+
+header .navbar a:hover{
+    color:var(--orange);
+}
+
+
+.footer
+    {
+        margin-top:30%;
+        width: 100%;
+        padding: 5px 10px;
+        background: #333;
+        color:white;
+        display: flex;
+    }
+    .footer div{
+        text-align: center;
+    }
+    .col-2
+    {
+        flex-grow: 1;
+    }
+   .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .col-2 a{
+    display: block;
+    text-decoration: none;
+    color:burlywood;
+    margin-bottom: 10px;
+    font-size: small;
+}
+:root{
+ --orange: #ffa500;
+}
+
+
+
+*
+{
+    font-family: 'Nunito',sans-serif;
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    outline : none ; 
+    border :none;
+    text-decoration : none;
+    transition: all .2s linear;
+}
+
+*::selection {
+ background: var(--orange);
+ color:white;
+}
+
+body{
+    background-image:src("bg1.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+html{
+    font-size : 62.5%;
+    overflow-x:hidden ;
+    scroll-padding-top :6rem;
+    scroll-behavior : smooth;
+}
+header {
+    position: fixed;
+    top : 0;left:0;right:0;
+    background: #333;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color :aliceblue;
+    text-transform: uppercase;
+
+
+}
+header .logo span {
+    color : var(--orange);
+}
+
+header .navbar a{
+    color : #fff;
+    font-size:2rem;
+    margin : 0 .8rem;
+
+}
+
+header .navbar a:hover{
+    color:var(--orange);
+}
+
+header .search-icon{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor :pointer;
+    right : 33%;
+    position: absolute;
+}
+header .login-icon{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor :pointer;
+    margin-right: 0.5rem;
+    
+}
+header .icons i:hover{
+    color : var(--orange);
+}
+header .search-bar-container #search-bar{
+
+  font-size: 17px;
+  width : 100%;
+  padding : 1rem;
+  text-transform: none;
+  color : #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  
+  color: white;
+}
+.fa-whatsapp {
+  
+  color: white;
+}
+.fa-instagram {
+  
+  color: white;
+}
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+
+
+::-webkit-scrollbar
+     {
+      width: 20px;
+     }
+     ::-webkit-scrollbar-track
+     {
+      box-shadow: inset 0 0 5px grey;
+     }
+     ::-webkit-scrollbar-thumb
+     {
+      background:#333;
+     }
+     ::-webkit-scrollbar-thumb:hover
+     {
+ background:orange;
+     }
+     
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 40s infinite; }
+.hmove:hover { animation-play-state: paused; }
+@media only screen and (max-width: 768px) {
+  .hmove { animation-duration: 20s; }
+}
+
+
+section {
+  margin-top: 16%;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(2) {
+  color:white;
+
+}
+section:nth-child(3) {
+  color: #e0ffff;
+}
+section:nth-child(4) {
+  color:white;
+  background:orange;
+}
+section .container {
+  margin-top: 6%;
+}
+
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+section .text-container .text-box {
+  margin: 20px;
+  padding: 50px;
+  background:orange;
+  border-radius: 2%;
+  border-color: #333;
+}
+section .text-container .text-box h4 {
+  font-size: 20px;
+  font-family: 'Nunito',sans-serif;
+  text-align: center;
+  
+  margin-bottom: 10px;
+}
+
+@media (max-width:300px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #333;
+  background-color: #333;
+  margin: 8px;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* Footer Start */
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #444;
+    padding: 70px 0;
+    margin-top: 0%;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color:orange;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.b{
+    opacity: 0.3;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+/* Footer End */
+
+/* Small screens */
+@media (max-width: 576px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 0.5rem 0;
+    }
+
+    .login-icon {
+        margin-top: 1rem;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Adjust styles for medium-sized screens here */
+}
+
+/* Large screens */
+@media (min-width: 993px) {
+    /* Adjust styles for large screens here */
+}
+
+
+/* Small screens */
+@media (max-width: 576px) {
+    .book {
+        padding: 2rem 0;
+    }
+
+    .col-md-6 {
+        order: 2;
+    }
+
+    .col-md-5 {
+        order: 1;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Adjust styles for medium-sized screens here */
+}
+
+/* Large screens */
+@media (min-width: 993px) {
+    .book {
+        padding: 3rem 0;
+    }
+
+    .col-md-6 {
+        order: 1;
+    }
+
+    .col-md-5 {
+        order: 2;
+    }
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+    </style>
+
+
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <header>
+
+
+    <a href ="#" class="logo"><span>T</span>ravelia</a>
+    <nav class ="navbar">
+        <a href ="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href ="packages.html" >Packages</a>
+        <a href ="services.html" >Services</a>
+        <a href ="gallary.html">Gallary</a>
+        <a href ="book.html">Book</a>
+        
+        <a href="contact.html">Contact</a>
+       
+       
+        
+    </nav>
+       
+
+     
+       </div>
+    
+
+</header>
+    <!--Jquery-->
+
+    
+    <section>
+        <div class="container reveal fade-bottom">
+          
+          <div class="text-container">
+            <div class="text-box">
+              <h4>At TRAVELIA travel, we are passionate about helping people explore the world.we believe that travel should be sustainable and responsible.we are committed to minimizing our impact on the enviornmentOur mission is to make travel accessible and enjoyable for everyeone.</h4>
+              
+      
+      
+            </div>
+            <div class="text-box">
+              <h4> "Our company was founded by three friends who shared a love of travel.After years of working in the corporate world, we decided to follow our passion and start our won travel company.Business that helps others experience the same joy and wonder that we felt when we travelled."</h4>
+              
+            </div>
+            <div class="text-box">
+          <h4>At TRAVELIA,we believe that travel should be sustainable and responsible.we are committed to minimizing our impact on the enviornment and suporting local communities wherever we go.we believe that travel should be sustainable and responsible.we are committed to minimizing our impact on the enviornment</h4>
+      
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+        <script>
+          function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      
+          </script>
+        <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>   
+</body>
+
+    
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>plan your trip</h4>
+                <ul>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">transport</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  
+  <!--FOOTER-->
+
+  
+    
+</html>

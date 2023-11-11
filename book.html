@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+     <!-- Bootstrap Link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Bootstrap Link -->
+     <!-- Font Awesome Cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <!-- Font Awesome Cdn -->
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+     <!-- Google Fonts -->
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+
+<body>
+
+    <header>
+
+
+        <a href ="#" class="logo"><span>T</span>ravelia</a>
+        <nav class ="navbar">
+            <a href ="main.html">Home</a>
+            <a href ="about.html">About</a>
+            <a href ="packages.html" >Packages</a>
+            <a href ="services.html" >Services</a>
+            <a href ="gallary.html">Gallery</a>
+            <a href ="book.html">Book</a>
+            <a href="contact.html">Contact</a>
+           
+            
+        </nav>
+            
+            <div class="login-icon">
+
+            
+            <button id = "login-btn">Login<i class ="fa fa-user" ></i>
+            </button>
+           </div>
+    </header>
+    <div class="login-form-container" id ="login-form">
+
+        <i class="fas fa-times" id ="form-close"></i>
+    </div>
+
+    <!---booking-->
+    <div class ="pack"></div>
+    <h1 class ="heading">
+        <span><b>B</b></span>
+        <span><b>O</b></span>
+        <span><b>O</b></span>
+        <span><b>K</b></span>
+        <span class="space"></span>
+        <span><b>N</b></span>
+        <span><b>O</b></span>
+        <span><b>W</b></span>
+    </h1> 
+  </div>
+
+
+   <!-- Section Book Start -->
+   <section class="book" id="book">
+    <div class="container">
+      
+      
+      <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="book-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-5 py-3 py-md-0">
+          <form action="payment.html">
+            <input type="text" class="form-control" id ="n1" placeholder="Dream Destination" pattern="[A-Za-z]{5,12}" required ="required"><p id ="demo"></p><br>
+            <input type="number" class="form-control" id ="n2" placeholder="Travellers " pattern="[0-9]{1}" required ="required"><p id ="demo1"></p><br>
+          
+            <input type="date" class="form-control" id ="n3"placeholder="Departure Date" min="2023-11-11" required ="required"><b></b><br><br>
+            <input type="date" class="form-control" id ="n4"placeholder="Arrival Date" min="2023-11-25" required ="required"><b></b><br><br>
+            
+            <textarea class="form-control" rows="5" id="n5" name="text"required ="required" placeholder="Enter Your Name & Details"></textarea>
+            <p><a href ="payment.html"></a>
+         
+            <a href="payment.html"><button type="submit"  class ="submit" id="submit"  onclick="book()"><b>BOOK NOW</b></button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+ // document.getElementById('submit').addEventListener('click', function() {
+    //window.location.href = 'payment.html'; // Replace 'target-page.html' with the URL of the page you want to navigate to
+ // });
+
+ 
+ // </script>
+
+<script>
+  function book(){
+    var x = document.getElementById("n1")
+    if(x.validity.valueMissing){
+     alert( "Destination Missing");
+   }
+   else if(x.validity.patternMismatch){
+    alert("Pattern missing");
+   }
+  
+  
+   var y = document.getElementById("n2")
+    if(y.validity.valueMissing){
+     alert ("Travellers Missing");
+   }
+   else if(y.validity.patternMismatch){
+    alert("Pattern missing");
+   }
+  
+   var z = document.getElementById("n3")
+    if(z.validity.valueMissing){
+     alert ("departure date Missing");
+   }
+   else if(z.validity.patternMismatch){
+    alert("Pattern missing");
+   }
+   
+   var a= document.getElementById("n4")
+    if(a.validity.valueMissing){
+     alert ("Arrival date Missing");
+   }
+   else if(a.validity.patternMismatch){
+    alert("Pattern missing");
+   }
+
+   var b= document.getElementById("n5")
+   if(b.validity.valueMissing){
+    alert("Details Missing");
+   }
+   else if(b.validity.patternMismatch){
+    alert("Pattern missing");
+   }
+   
+  if(x.value && y.value && z.value && a.value && b.value){
+    window.location.href = "payment.html";
+  }
+  else {
+ 
+       alert("Please fill all the fields and give valid input");
+    }
+  }
+  
+
+  $(function(){
+    var dtToday = new Date();
+
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+
+    var maxDate = year + '-' + month + '-' + day;    
+    $('#txtDate').attr('max', maxDate);
+});
+</script>
+
+  <!-- Section Book End -->
+    <!--FOOTER-->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">affiliate program</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">shipping</a></li>
+                  <li><a href="#">returns</a></li>
+                  <li><a href="#">order status</a></li>
+                  <li><a href="#">payment options</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>plan your trip</h4>
+              <ul>
+                  <li><a href="#">Hotels</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">transport</a></li>
+                  <li><a href="#">dress</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<!--FOOTER-->
+</html>
+
+  
